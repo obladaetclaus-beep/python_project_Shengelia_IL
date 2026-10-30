@@ -3,18 +3,20 @@
 while True:
     try:
         month = int(input("Введите номер месяца (1-12): "))
+        break
 
-        if 1 <= month <= 12:
-            if month == 12 or month == 1 or month == 2:
-                print("зима")
-            elif 3 <= month <= 5:
-                print("весна")
-            elif 6 <= month <= 8:
-                print("лето")
-            elif 9 <= month <= 11:
-                print("осень")
-            break
-        else:
-            print("Неправильно ввели! Номер должен быть от 1 до 12.")
     except ValueError:
         print("Неправильно ввели! Нужно ввести целое число.")
+
+if 1 <= month <= 12:
+    if month == 12 or month == 1 or month == 2:
+        print("зима")
+    elif 3 <= month <= 5:
+        print("весна")
+    elif 6 <= month <= 8:
+        print("лето")
+    elif 9 <= month <= 11:
+        print("осень")
+
+else:
+    print("Неправильно ввели! Номер должен быть от 1 до 12.")
