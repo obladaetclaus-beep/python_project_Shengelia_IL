@@ -4,9 +4,7 @@
 
 import random
 
-
 def check_same_digits():
-
     num = random.randint(1000, 9999)
     print(f"Сгенерированное число: {num}")
 
@@ -15,13 +13,10 @@ def check_same_digits():
     d3 = (num // 10) % 10
     d4 = num % 10
 
-   
     if (d1 == d2 or d1 == d3 or d1 == d4 or
             d2 == d3 or d2 == d4 or d3 == d4):
         print("Результат: в числе есть одинаковые цифры.")
     else:
         print("Результат: все цифры в числе разные.")
-
-
 
 check_same_digits()
